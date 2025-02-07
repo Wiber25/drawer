@@ -1,0 +1,14 @@
+.mainContainer {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkBoxItem {
+    display: flex;
+    align-items: center;
+}
+
+.checkBoxItemTitle {
+    flex: 1;
+}

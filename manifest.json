@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Web note",
+  "version": "1.0.0",
+  "description": "Draw on webpage and save",
+  "icons": {
+    "48": "images/icon-48.png",
+    "127": "images/icon-128.png"
+  },
+  "author": {
+    "email": "wiberwiber0205@gmail.com"
+  },
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["http://*/*"],
+    "scripts": ["scripts/content.js"],
+    "css": ["styles/content.css"]
+  }],
+  "permissions": ["storage", "scripting"],
+  "action": {
+    "default_popup": "src/popup.html"
+  }
+}
